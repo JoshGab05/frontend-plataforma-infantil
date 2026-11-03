@@ -1,4 +1,4 @@
-const URL_BASE = 'https://multiplatafomra-ninos.onrender.com/api/v1/plataforma-infantil';
+const URL_BASE_BACKEND = 'https://multiplatafomra-ninos.onrender.com/api/v1/plataforma-infantil';
 
 export const enviar_datos_infante = async (nombre_capturado, edad_capturada) => {
     const respuesta = await fetch(`${URL_BASE_BACKEND}/registrar-estudiante`, {
