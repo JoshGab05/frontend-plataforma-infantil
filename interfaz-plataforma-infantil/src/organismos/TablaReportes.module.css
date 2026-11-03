@@ -1,0 +1,33 @@
+.contenedor_filtros {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.caja_busqueda {
+  padding: 12px;
+  font-size: 1.2rem;
+  border: var(--borde-grueso);
+  border-radius: 8px;
+  width: 300px;
+}
+
+.tabla_brutalista {
+  width: 100%;
+  border-collapse: collapse;
+  border: var(--borde-grueso);
+  background-color: #fff;
+  box-shadow: var(--sombra-dura);
+}
+
+.tabla_brutalista th, .tabla_brutalista td {
+  border: var(--borde-grueso);
+  padding: 15px;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.tabla_brutalista th {
+  background-color: var(--color-secundario);
+  text-transform: uppercase;
+}

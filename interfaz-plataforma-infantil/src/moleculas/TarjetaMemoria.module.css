@@ -1,0 +1,30 @@
+.cuadricula_memoria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.ficha_oculta, .ficha_revelada {
+  width: 80px;
+  height: 80px;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--borde-grueso);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ficha_oculta {
+  background-color: var(--color-secundario);
+  box-shadow: var(--sombra-dura);
+}
+
+.ficha_revelada {
+  background-color: var(--color-acento);
+  box-shadow: 2px 2px 0px #1a1a1a;
+  transform: translate(4px, 4px);
+}
