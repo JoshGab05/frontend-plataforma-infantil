@@ -9,7 +9,7 @@ const pares_espaciales = {
     'Adentro': 'Afuera', 'Afuera': 'Adentro',
     'Arriba': 'Abajo', 'Abajo': 'Arriba',
     'Cerca': 'Lejos', 'Lejos': 'Cerca',
-    'Encima': 'Debajo', 'Debajo': 'Encima'
+    'arriba': 'Debajo', 'Debajo': 'abajo'
 };
 
 const catalogo_bases = [
@@ -55,9 +55,9 @@ const EscenaVisual = ({ opcion }) => {
         est_movil.top = '40%'; est_movil.left = '50%'; est_movil.transform = 'translate(-50%, -50%)';
     } else if (opcion.texto === 'Afuera') {
         est_caja.justifyContent = 'space-between'; est_base.position = 'static'; est_movil.position = 'static';
-    } else if (opcion.texto === 'Arriba' || opcion.texto === 'Encima') {
+    } else if (opcion.texto === 'Arriba' || opcion.texto === 'arriba') {
         est_movil.top = '-20px';
-    } else if (opcion.texto === 'Abajo' || opcion.texto === 'Debajo') {
+    } else if (opcion.texto === 'Abajo' || opcion.texto === 'abajo') {
         est_movil.bottom = '-20px';
     } else if (opcion.texto === 'Cerca') {
         est_caja.justifyContent = 'center'; est_caja.gap = '5px'; est_base.position = 'static'; est_movil.position = 'static';
